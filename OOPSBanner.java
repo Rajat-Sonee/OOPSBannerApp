@@ -1,12 +1,17 @@
 /**
- * OOPS Banner App - Use Case 1
+ * OOPS Banner App - Use Case 4
  * @author Rajat Sonee
  * @version 1.0
  */
 public class OOPSBanner {
     public static void main(String[] args) {
-        String name = args.length > 0 ? args[0] : "World";
-        System.out.println("Hello " + name);
+        if (args.length == 0) {
+            System.out.println("Hello World");
+        } else {
+            for (String name : args) {
+                System.out.println("Hello " + name);
+            }
+        }
     }
 }
 
